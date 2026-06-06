@@ -1,4 +1,5 @@
-workspace/
+workspace/claude/
+workspace/deepseek/
 .env
 __pycache__/
 *.pyc

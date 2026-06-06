@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "deny": ["WebFetch", "WebSearch", "Bash(curl *)", "Bash(wget *)"]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "WebFetch|WebSearch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'БЛОК: веб-запросы запрещены в этом проекте' >&2 && exit 1"
+          }
+        ]
+      }
+    ]
+  }
+}
