@@ -1,0 +1,10 @@
+> Produced by: researcher_b.md (called by deep_digest.md)
+> Topic: decentralized finance
+
+## Context: decentralized finance
+
+Decentralized finance, or DeFi, emerged from the broader blockchain movement that began with Bitcoin in 2009. While Bitcoin demonstrated peer-to-peer digital money, it was Ethereum's launch in 2015, with its programmable smart contracts, that made DeFi possible. The core idea crystallized around 2017-2018: rebuild every traditional financial service — lending, borrowing, trading, insurance, derivatives — as open, permissionless software running on public blockchains, removing banks, brokers, and other intermediaries from the equation.
+
+The main players in DeFi span several categories. Protocol developers include MakerDAO (collateralized stablecoins), Uniswap and Curve (decentralized exchanges), Aave and Compound (lending markets), Lido (liquid staking), and Synthetix (synthetic assets). Blockchain platforms hosting DeFi activity include Ethereum, Solana, Avalanche, Arbitrum, Optimism, and Polygon. Key infrastructure providers such as Chainlink supply oracle data feeds that connect smart contracts to real-world prices. On the user side, DeFi attracts retail traders seeking yield, institutional funds exploring tokenized assets, developers building composable money legos, and individuals in countries with unstable currencies or limited banking access.
+
+DeFi solves several fundamental problems in traditional finance. It eliminates gatekeeping — anyone with an internet connection and a wallet can access financial services without identity verification, bank approval, or geographic restrictions. It reduces counterparty risk by replacing institutional trust with transparent, auditable code and over-collateralization. It enables atomic composability, where one protocol's output feeds directly into another's input without manual intervention, creating capital efficiency impossible in the siloed traditional system. It also restores user custody — individuals hold their own assets rather than depending on custodians who may become insolvent, freeze accounts, or impose withdrawal limits.
