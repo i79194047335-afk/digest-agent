@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" font-family="system-ui, sans-serif">
+
+  <rect width="720" height="540" fill="#0f1117"/>
+
+  <text x="360" y="30" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">Workflow: Routing — Маршрутизация</text>
+  <text x="360" y="50" text-anchor="middle" fill="#94a3b8" font-size="11">Входящий запрос классифицируется и направляется к нужному специалисту</text>
+
+  <!-- Входящий запрос -->
+  <rect x="280" y="70" width="160" height="44" rx="10" fill="#1e2130" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="360" y="88" text-anchor="middle" fill="#a5b4fc" font-size="11" font-weight="700">Входящий запрос</text>
+  <text x="360" y="104" text-anchor="middle" fill="#818cf8" font-size="10">"сегодня код" / "вопрос по крипте"</text>
+
+  <line x1="360" y1="114" x2="360" y2="138" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrP)"/>
+
+  <!-- Классификатор -->
+  <rect x="260" y="138" width="200" height="48" rx="10" fill="#312e81" stroke="#6366f1" stroke-width="2"/>
+  <text x="360" y="158" text-anchor="middle" fill="#c7d2fe" font-size="12" font-weight="700">Классификатор</text>
+  <text x="360" y="176" text-anchor="middle" fill="#a5b4fc" font-size="10">LLM определяет тип запроса</text>
+
+  <!-- три стрелки вниз -->
+  <line x1="220" y1="186" x2="150" y2="240" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <line x1="360" y1="186" x2="360" y2="240" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <line x1="500" y1="186" x2="570" y2="240" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrP)"/>
+
+  <!-- Специалист 1 -->
+  <rect x="60" y="240" width="160" height="80" rx="10" fill="#1a1f2e" stroke="#10b981" stroke-width="1.5"/>
+  <text x="140" y="262" text-anchor="middle" fill="#10b981" font-size="11" font-weight="700">Специалист A</text>
+  <text x="140" y="280" text-anchor="middle" fill="#94a3b8" font-size="10">Оптимизирован под</text>
+  <text x="140" y="296" text-anchor="middle" fill="#94a3b8" font-size="10">один тип задачи</text>
+  <text x="140" y="312" text-anchor="middle" fill="#6ee7b7" font-size="10">CODE_TEACHER</text>
+
+  <!-- Специалист 2 -->
+  <rect x="280" y="240" width="160" height="80" rx="10" fill="#1a1f2e" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text x="360" y="262" text-anchor="middle" fill="#0ea5e9" font-size="11" font-weight="700">Специалист B</text>
+  <text x="360" y="280" text-anchor="middle" fill="#94a3b8" font-size="10">Оптимизирован под</text>
+  <text x="360" y="296" text-anchor="middle" fill="#94a3b8" font-size="10">один тип задачи</text>
+  <text x="360" y="312" text-anchor="middle" fill="#7dd3fc" font-size="10">CRYPTO_TEACHER</text>
+
+  <!-- Специалист 3 -->
+  <rect x="500" y="240" width="160" height="80" rx="10" fill="#1a1f2e" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="580" y="262" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="700">Специалист C</text>
+  <text x="580" y="280" text-anchor="middle" fill="#94a3b8" font-size="10">Оптимизирован под</text>
+  <text x="580" y="296" text-anchor="middle" fill="#94a3b8" font-size="10">один тип задачи</text>
+  <text x="580" y="312" text-anchor="middle" fill="#fcd34d" font-size="10">FINANCE_TEACHER</text>
+
+  <!-- стрелки к памяти -->
+  <line x1="140" y1="320" x2="140" y2="356" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <line x1="360" y1="320" x2="360" y2="356" stroke="#0ea5e9" stroke-width="1.5" marker-end="url(#arrB)"/>
+  <line x1="580" y1="320" x2="580" y2="356" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrY)"/>
+
+  <!-- Память 1 -->
+  <rect x="60" y="356" width="160" height="34" rx="8" fill="#0d1f18" stroke="#10b981" stroke-width="1"/>
+  <text x="140" y="370" text-anchor="middle" fill="#6ee7b7" font-size="10">CODE_PROGRESS</text>
+  <text x="140" y="384" text-anchor="middle" fill="#94a3b8" font-size="9">изолированная память</text>
+
+  <!-- Память 2 -->
+  <rect x="280" y="356" width="160" height="34" rx="8" fill="#0c1f2d" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="360" y="370" text-anchor="middle" fill="#7dd3fc" font-size="10">CRYPTO_PROGRESS</text>
+  <text x="360" y="384" text-anchor="middle" fill="#94a3b8" font-size="9">изолированная память</text>
+
+  <!-- Память 3 -->
+  <rect x="500" y="356" width="160" height="34" rx="8" fill="#1f1500" stroke="#f59e0b" stroke-width="1"/>
+  <text x="580" y="370" text-anchor="middle" fill="#fcd34d" font-size="10">FINANCE_PROGRESS</text>
+  <text x="580" y="384" text-anchor="middle" fill="#94a3b8" font-size="9">изолированная память</text>
+
+  <!-- Почему изоляция важна -->
+  <rect x="30" y="412" width="660" height="50" rx="8" fill="#111827" stroke="#475569" stroke-width="1"/>
+  <text x="360" y="432" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="700">Почему специалисты изолированы друг от друга</text>
+  <text x="360" y="450" text-anchor="middle" fill="#94a3b8" font-size="10">Каждый видит только свою историю — без шума от других задач. Модель точнее когда контекст чистый.</text>
+
+  <!-- Когда использовать -->
+  <rect x="30" y="474" width="315" height="52" rx="8" fill="#1e2130" stroke="#4ade80" stroke-width="1"/>
+  <text x="187" y="494" text-anchor="middle" fill="#4ade80" font-size="10" font-weight="600">✓ Подходит</text>
+  <text x="187" y="512" text-anchor="middle" fill="#94a3b8" font-size="10">Разные типы запросов требуют разного подхода</text>
+
+  <rect x="375" y="474" width="315" height="52" rx="8" fill="#1e2130" stroke="#f87171" stroke-width="1"/>
+  <text x="533" y="494" text-anchor="middle" fill="#f87171" font-size="10" font-weight="600">✗ Не подходит</text>
+  <text x="533" y="512" text-anchor="middle" fill="#94a3b8" font-size="10">Все запросы одного типа — лишняя сложность</text>
+
+  <defs>
+    <marker id="arrP" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+    <marker id="arrY" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+  </defs>
+
+</svg>
