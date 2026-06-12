@@ -48,6 +48,13 @@ block05_routing/
 - **Claude and DeepSeek produce structurally different outputs at the same prompt.** Claude's deep digest is tightly structured around the trilemma and practical implications; DeepSeek's covers more breadth (Solana, Move, Celestia, DeFi primitives, CBDCs) with denser domain terminology. Routing logic is identical but the downstream quality differs.
 - **Separating the orchestrator from the pipeline files keeps each file focused.** The orchestrator holds only classification logic; pipelines hold only execution logic. Changing the depth of the deep pipeline does not require touching the routing rules.
 
+## Re-run note (2026-06-12 correction)
+
+The original DeepSeek run was invalid: `ORCHESTRATOR.md` dispatched to `agents/quick_digest.md` and `agents/deep_digest.md`, but neither file was ever created for DeepSeek — both task entry points were dangling. The two agent files were added (mirrored from Claude's, with `deepseek/` output paths) and Block 5 was re-run for DeepSeek alone. Outcome:
+
+- **Quick** — compliant: 176 words (≤300), 3 facts, lineage header present.
+- **Deep** — the required "What this means in practice" section now appears (it was missing in the original run), confirming that omission was a **configuration/archive gap, not a model failure**. Word count fell from 1319 to 1154 but still exceeds the 800–1000 cap, so DeepSeek's length overshoot **persists even with complete, correct instructions** — a model-level trait rather than a setup issue. Kept as-is to document authentic behavior.
+
 ## Files in this block
 
 | Filename | Purpose | Created by |

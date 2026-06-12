@@ -1,8 +1,8 @@
 > Routed by: ORCHESTRATOR.md → quick_digest.md
 > Topic: blockchain
 
-Blockchain is a distributed ledger where transactions are grouped into cryptographically linked blocks, forming an immutable chain. It removes the need for central intermediaries by using consensus mechanisms — Proof of Work or Proof of Stake — so a peer-to-peer network can validate and agree on the state without trusting any single party.
+Blockchain is a decentralized digital ledger that records transactions across a network of computers rather than relying on a central authority. Each transaction is verified by network participants through consensus mechanisms such as Proof of Work or Proof of Stake. Once validated, data is grouped into blocks and appended permanently to the chain, ensuring no single entity can unilaterally alter the record.
 
-Bitcoin, launched in 2009 by the pseudonymous Satoshi Nakamoto, was the first working blockchain. It proved that digital scarcity and trustless value transfer were possible without a central authority, solving the double-spending problem that had defeated every previous attempt at digital currency.
+Each block in the chain contains a cryptographic hash of the previous block, a timestamp, and transaction data. This structure makes the ledger tamper-evident: altering any block would change its hash, breaking the chain link and alerting the network. Combined with public-key cryptography for transaction signing, blockchain achieves trustless security—parties can transact without needing to trust each other or any intermediary.
 
-Ethereum expanded blockchain beyond payments by adding smart contracts — self-executing code that runs on-chain. This unlocked decentralized applications, DeFi, NFTs, and DAOs. Its 2022 transition to Proof of Stake cut energy use by roughly 99.95%, addressing one of the technology's most persistent criticisms.
+Beyond currency, blockchain enables smart contracts—self-executing agreements where terms are written in code and run automatically on-chain. Ethereum popularized this, spawning decentralized applications (dApps) across finance, gaming, and supply chain. Use cases include DeFi lending platforms, NFT marketplaces, and tokenized real-world assets like real estate, collectively representing a programmable economy without traditional gatekeepers.
