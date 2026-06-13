@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620" font-family="system-ui, sans-serif">
+
+  <rect width="720" height="620" fill="#0f1117"/>
+
+  <text x="360" y="28" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">Workflow: Parallelization — Параллелизация</text>
+  <text x="360" y="46" text-anchor="middle" fill="#94a3b8" font-size="11">Два варианта: разделить задачу ИЛИ получить несколько независимых мнений</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- ВАРИАНТ 1: Sectioning -->
+  <!-- ══════════════════════════════════════════ -->
+
+  <rect x="30" y="60" width="320" height="260" rx="12" fill="#111827" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="30" y="60" width="320" height="30" rx="10" fill="#6366f1"/>
+  <rect x="30" y="78" width="320" height="12" fill="#6366f1"/>
+  <text x="190" y="80" text-anchor="middle" fill="white" font-size="12" font-weight="700">Вариант 1 — Sectioning</text>
+  <text x="190" y="104" text-anchor="middle" fill="#94a3b8" font-size="10">Задача делится на части, каждая часть — отдельному LLM</text>
+
+  <!-- Входящая задача -->
+  <rect x="105" y="118" width="170" height="30" rx="8" fill="#1e2130" stroke="#6366f1" stroke-width="1"/>
+  <text x="190" y="138" text-anchor="middle" fill="#a5b4fc" font-size="11">Большая задача</text>
+
+  <!-- три стрелки -->
+  <line x1="120" y1="148" x2="80" y2="178" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <line x1="190" y1="148" x2="190" y2="178" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <line x1="260" y1="148" x2="300" y2="178" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrP)"/>
+
+  <!-- три LLM параллельно -->
+  <rect x="44" y="178" width="80" height="40" rx="8" fill="#312e81" stroke="#6366f1" stroke-width="1"/>
+  <text x="84" y="194" text-anchor="middle" fill="#c7d2fe" font-size="10">LLM</text>
+  <text x="84" y="208" text-anchor="middle" fill="#94a3b8" font-size="9">часть A</text>
+
+  <rect x="150" y="178" width="80" height="40" rx="8" fill="#312e81" stroke="#6366f1" stroke-width="1"/>
+  <text x="190" y="194" text-anchor="middle" fill="#c7d2fe" font-size="10">LLM</text>
+  <text x="190" y="208" text-anchor="middle" fill="#94a3b8" font-size="9">часть B</text>
+
+  <rect x="256" y="178" width="80" height="40" rx="8" fill="#312e81" stroke="#6366f1" stroke-width="1"/>
+  <text x="296" y="194" text-anchor="middle" fill="#c7d2fe" font-size="10">LLM</text>
+  <text x="296" y="208" text-anchor="middle" fill="#94a3b8" font-size="9">часть C</text>
+
+  <!-- стрелки к агрегатору -->
+  <line x1="84" y1="218" x2="160" y2="256" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <line x1="190" y1="218" x2="190" y2="256" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <line x1="296" y1="218" x2="220" y2="256" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrP)"/>
+
+  <!-- агрегатор -->
+  <rect x="120" y="256" width="140" height="36" rx="8" fill="#1e2130" stroke="#10b981" stroke-width="1.5"/>
+  <text x="190" y="270" text-anchor="middle" fill="#6ee7b7" font-size="10" font-weight="600">Агрегатор</text>
+  <text x="190" y="284" text-anchor="middle" fill="#94a3b8" font-size="9">собирает части вместе</text>
+
+  <text x="190" y="316" text-anchor="middle" fill="#4ade80" font-size="10">✓ Скорость — всё параллельно</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- ВАРИАНТ 2: Voting -->
+  <!-- ══════════════════════════════════════════ -->
+
+  <rect x="370" y="60" width="320" height="260" rx="12" fill="#111827" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="370" y="60" width="320" height="30" rx="10" fill="#f59e0b"/>
+  <rect x="370" y="78" width="320" height="12" fill="#f59e0b"/>
+  <text x="530" y="80" text-anchor="middle" fill="white" font-size="12" font-weight="700">Вариант 2 — Voting</text>
+  <text x="530" y="104" text-anchor="middle" fill="#94a3b8" font-size="10">Несколько LLM решают одно и то же, выбирается лучший ответ</text>
+
+  <!-- Входящая задача -->
+  <rect x="445" y="118" width="170" height="30" rx="8" fill="#1e2130" stroke="#f59e0b" stroke-width="1"/>
+  <text x="530" y="138" text-anchor="middle" fill="#fcd34d" font-size="11">Один запрос</text>
+
+  <!-- три стрелки -->
+  <line x1="460" y1="148" x2="420" y2="178" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrY)"/>
+  <line x1="530" y1="148" x2="530" y2="178" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrY)"/>
+  <line x1="600" y1="148" x2="640" y2="178" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrY)"/>
+
+  <!-- три LLM параллельно -->
+  <rect x="384" y="178" width="80" height="40" rx="8" fill="#2d1f06" stroke="#f59e0b" stroke-width="1"/>
+  <text x="424" y="194" text-anchor="middle" fill="#fcd34d" font-size="10">LLM 1</text>
+  <text x="424" y="208" text-anchor="middle" fill="#94a3b8" font-size="9">ответ A</text>
+
+  <rect x="490" y="178" width="80" height="40" rx="8" fill="#2d1f06" stroke="#f59e0b" stroke-width="1"/>
+  <text x="530" y="194" text-anchor="middle" fill="#fcd34d" font-size="10">LLM 2</text>
+  <text x="530" y="208" text-anchor="middle" fill="#94a3b8" font-size="9">ответ B</text>
+
+  <rect x="596" y="178" width="80" height="40" rx="8" fill="#2d1f06" stroke="#f59e0b" stroke-width="1"/>
+  <text x="636" y="194" text-anchor="middle" fill="#fcd34d" font-size="10">LLM 3</text>
+  <text x="636" y="208" text-anchor="middle" fill="#94a3b8" font-size="9">ответ C</text>
+
+  <!-- стрелки к судье -->
+  <line x1="424" y1="218" x2="500" y2="256" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrY)"/>
+  <line x1="530" y1="218" x2="530" y2="256" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrY)"/>
+  <line x1="636" y1="218" x2="560" y2="256" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrY)"/>
+
+  <!-- судья -->
+  <rect x="460" y="256" width="140" height="36" rx="8" fill="#1e2130" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="530" y="270" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="600">Судья / агрегатор</text>
+  <text x="530" y="284" text-anchor="middle" fill="#94a3b8" font-size="9">выбирает лучший ответ</text>
+
+  <text x="530" y="316" text-anchor="middle" fill="#4ade80" font-size="10">✓ Точность — защита от ошибки одной модели</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- ПРИМЕРЫ -->
+  <!-- ══════════════════════════════════════════ -->
+
+  <rect x="30" y="340" width="660" height="260" rx="12" fill="#111827" stroke="#475569" stroke-width="1"/>
+  <text x="360" y="364" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="700">Примеры</text>
+
+  <!-- Простые -->
+  <text x="50" y="386" fill="#6366f1" font-size="11" font-weight="600">Простые:</text>
+
+  <rect x="50" y="396" width="290" height="52" rx="8" fill="#1e2130" stroke="#6366f1" stroke-width="1"/>
+  <text x="195" y="414" text-anchor="middle" fill="#a5b4fc" font-size="10" font-weight="600">Проверка резюме (Sectioning)</text>
+  <text x="195" y="430" text-anchor="middle" fill="#94a3b8" font-size="10">LLM 1: грамматика · LLM 2: структура</text>
+  <text x="195" y="444" text-anchor="middle" fill="#94a3b8" font-size="10">LLM 3: соответствие вакансии — всё сразу</text>
+
+  <rect x="360" y="396" width="290" height="52" rx="8" fill="#1e2130" stroke="#f59e0b" stroke-width="1"/>
+  <text x="505" y="414" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="600">Выбор заголовка (Voting)</text>
+  <text x="505" y="430" text-anchor="middle" fill="#94a3b8" font-size="10">3 LLM независимо пишут заголовок</text>
+  <text x="505" y="444" text-anchor="middle" fill="#94a3b8" font-size="10">4-й выбирает лучший без взаимного влияния</text>
+
+  <!-- Средние -->
+  <text x="50" y="470" fill="#10b981" font-size="11" font-weight="600">Средней сложности:</text>
+
+  <rect x="50" y="480" width="185" height="64" rx="8" fill="#1e2130" stroke="#10b981" stroke-width="1"/>
+  <text x="143" y="498" text-anchor="middle" fill="#6ee7b7" font-size="10" font-weight="600">Анализ 50 отзывов</text>
+  <text x="143" y="514" text-anchor="middle" fill="#94a3b8" font-size="10">Делятся на 5 групп</text>
+  <text x="143" y="528" text-anchor="middle" fill="#94a3b8" font-size="10">5 LLM параллельно</text>
+  <text x="143" y="542" text-anchor="middle" fill="#94a3b8" font-size="10">Скорость ×5</text>
+
+  <rect x="255" y="480" width="185" height="64" rx="8" fill="#1e2130" stroke="#f59e0b" stroke-width="1"/>
+  <text x="348" y="498" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="600">Модерация контента</text>
+  <text x="348" y="514" text-anchor="middle" fill="#94a3b8" font-size="10">3 LLM оценивают текст</text>
+  <text x="348" y="528" text-anchor="middle" fill="#94a3b8" font-size="10">Консенсус = решение</text>
+  <text x="348" y="542" text-anchor="middle" fill="#94a3b8" font-size="10">Разногласие = человек</text>
+
+  <rect x="460" y="480" width="210" height="64" rx="8" fill="#1e2130" stroke="#6366f1" stroke-width="1"/>
+  <text x="565" y="498" text-anchor="middle" fill="#a5b4fc" font-size="10" font-weight="600">Исследование темы</text>
+  <text x="565" y="514" text-anchor="middle" fill="#94a3b8" font-size="10">Технологии / Рынок / Регуляции</text>
+  <text x="565" y="528" text-anchor="middle" fill="#94a3b8" font-size="10">3 субагента параллельно</text>
+  <text x="565" y="542" text-anchor="middle" fill="#94a3b8" font-size="10">Оркестратор собирает итог</text>
+
+  <defs>
+    <marker id="arrP" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+    <marker id="arrY" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 2L8 5L2 8" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+  </defs>
+
+</svg>
