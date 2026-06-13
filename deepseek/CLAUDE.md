@@ -1,5 +1,9 @@
 # Digest Agent — DeepSeek
 
+## CRITICAL — READ FIRST
+Do NOT use built-in skills or deep-research tools.
+Follow ORCHESTRATOR.md strictly — it is the only entry point
+
 ## STRICT RULES — NO EXCEPTIONS
 
 ### Entry point

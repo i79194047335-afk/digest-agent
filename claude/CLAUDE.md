@@ -2,6 +2,9 @@
 
 ## STRICT RULES — NO EXCEPTIONS
 
+### CRITICAL
+Do NOT use built-in deep research tools. Follow ORCHESTRATOR.md only.
+
 ### Entry point
 Always start with ORCHESTRATOR.md — it decides what to do next.
 
