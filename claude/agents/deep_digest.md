@@ -1,25 +1,21 @@
-# Deep Digest Pipeline (parallel researchers)
+# Deep Digest Pipeline (dynamic researchers)
 
 ## Lineage
-- Input: topic from ORCHESTRATOR.md
-- Calls: researcher_a.md, researcher_b.md, researcher_c.md — then writer.md
+- Input: ../workspace/claude/research_plan.md (written by ORCHESTRATOR.md)
+- Calls: agents/researcher.md once per angle — then agents/writer.md
 - Output: ../workspace/claude/digest_final.md
 
 ## Steps
-1. Run these three tasks simultaneously for topic [topic]:
-   - agents/researcher_a.md
-   - agents/researcher_b.md
-   - agents/researcher_c.md
-
-2. Wait until all three files exist:
-   - ../workspace/claude/research_a.md
-   - ../workspace/claude/research_b.md
-   - ../workspace/claude/research_c.md
-
-3. Run agents/writer.md
-
-4. Final output: ../workspace/claude/digest_final.md
+1. Read ../workspace/claude/research_plan.md
+2. For EACH angle listed in the plan, run agents/researcher.md
+   - Pass the angle name and its description as the assignment
+   - Number the outputs: research_1.md, research_2.md, research_3.md
+   - Run these calls in parallel
+3. Wait until one research_[N].md file exists for every angle in the plan
+4. Run agents/writer.md
+5. Final output: ../workspace/claude/digest_final.md
 
 ## Constraints
 - No web search, no URLs
-- Maximum 4 researcher calls total
+- Run exactly as many researchers as there are angles in the plan (max 3)
+- Do not invent angles — use only what ORCHESTRATOR.md wrote in the plan

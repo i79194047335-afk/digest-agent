@@ -7,8 +7,9 @@ Always start with ORCHESTRATOR.md — it decides what to do next.
 
 ### Output files
 - Quick pipeline: ../workspace/claude/quick_[topic].md
-- Deep pipeline: ../workspace/claude/digest_final.md
-- Intermediate: ../workspace/claude/research_a.md, ../workspace/claude/research_b.md, ../workspace/claude/research_c.md
+- Deep pipeline — planning: ../workspace/claude/research_plan.md
+- Deep pipeline — research: ../workspace/claude/research_1.md, research_2.md, research_3.md
+- Deep pipeline — final: ../workspace/claude/digest_final.md
 
 ### Lineage header (required in every output file)
 Every output file must begin with a lineage block showing the full chain:

@@ -7,8 +7,9 @@ Always start with ORCHESTRATOR.md — it decides what to do next.
 
 ### Output files
 - Quick pipeline: ../workspace/deepseek/quick_[topic].md
-- Deep pipeline: ../workspace/deepseek/deep_[topic].md
-- Intermediate: ../workspace/deepseek/plan.md, ../workspace/deepseek/digest.md
+- Deep pipeline — planning: ../workspace/deepseek/research_plan.md
+- Deep pipeline — research: ../workspace/deepseek/research_1.md, research_2.md, research_3.md
+- Deep pipeline — final: ../workspace/deepseek/digest_final.md
 
 ### Lineage header (required in every output file)
 Every output file must begin with a lineage block showing the full chain:
