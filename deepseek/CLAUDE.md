@@ -2,7 +2,9 @@
 
 ## CRITICAL — READ FIRST
 Do NOT use built-in skills or deep-research tools.
-Follow ORCHESTRATOR.md strictly — it is the only entry point
+Follow ORCHESTRATOR.md strictly — it is the only entry point.
+Your workspace is ONLY ../workspace/deepseek/ — never read or write outside it.
+If a file already exists in your workspace — overwrite it, do not skip writing.
 
 ## STRICT RULES — NO EXCEPTIONS
 
