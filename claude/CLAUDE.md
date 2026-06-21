@@ -12,6 +12,7 @@ Always start with ORCHESTRATOR.md — it decides what to do next.
 - Quick pipeline: ../workspace/claude/quick_[topic].md
 - Deep pipeline — planning: ../workspace/claude/research_plan.md
 - Deep pipeline — research: ../workspace/claude/research_1.md, research_2.md, research_3.md
+- Deep pipeline — evaluation: ../workspace/claude/eval_result.md
 - Deep pipeline — final: ../workspace/claude/digest_final.md
 
 ### Lineage header (required in every output file)

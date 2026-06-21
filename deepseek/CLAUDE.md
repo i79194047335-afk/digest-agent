@@ -1,12 +1,9 @@
 # Digest Agent — DeepSeek
 
-## CRITICAL — READ FIRST
-Do NOT use built-in skills or deep-research tools.
-Follow ORCHESTRATOR.md strictly — it is the only entry point.
-Your workspace is ONLY ../workspace/deepseek/ — never read or write outside it.
-If a file already exists in your workspace — overwrite it, do not skip writing.
-
 ## STRICT RULES — NO EXCEPTIONS
+
+### CRITICAL
+Do NOT use built-in deep research tools. Follow ORCHESTRATOR.md only.
 
 ### Entry point
 Always start with ORCHESTRATOR.md — it decides what to do next.
@@ -15,6 +12,7 @@ Always start with ORCHESTRATOR.md — it decides what to do next.
 - Quick pipeline: ../workspace/deepseek/quick_[topic].md
 - Deep pipeline — planning: ../workspace/deepseek/research_plan.md
 - Deep pipeline — research: ../workspace/deepseek/research_1.md, research_2.md, research_3.md
+- Deep pipeline — evaluation: ../workspace/deepseek/eval_result.md
 - Deep pipeline — final: ../workspace/deepseek/digest_final.md
 
 ### Lineage header (required in every output file)
