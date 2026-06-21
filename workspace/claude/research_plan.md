@@ -1,12 +1,12 @@
 > Routed by: ORCHESTRATOR.md
-> Topic: Arbitrage on DEXs
+> Topic: decentralized finance
 
-## Research plan: Arbitrage on DEXs
+## Research plan: decentralized finance
 
 ### Reasoning
-DEX arbitrage spans three independent layers: the mathematical mechanics that create price gaps, the concrete strategies traders use to capture them, and the economic reality of competition and risk. Together these cover the full picture — from why arbitrage exists to whether it's still profitable in 2026.
+Decentralized finance spans three clearly distinct dimensions that together give a complete picture: the technical protocols that make it possible, the economic incentives that sustain it, and the risk/regulatory forces that constrain it. These angles share no overlap — a reader who understands all three understands DeFi fully.
 
 ### Angles
-1. AMM Mechanics & Price Formation — How constant-function market makers create arbitrage opportunities, concentrated liquidity math, and how price discovery lags between pools
-2. Arbitrage Strategies & Execution Infrastructure — DEX-DEX, CEX-DEX, and cross-chain arbitrage strategies, flash loan mechanics, transaction bundling, and priority gas auctions
-3. Risk, Competition & Profitability Economics — MEV searcher competition, sandwich attacks on arb transactions, gas cost modeling, reversion risk, and the evolution of arbitrage profit margins through 2026
+1. Core Protocols & Mechanics — Research how DeFi is built: smart contracts, AMMs, liquidity pools, lending protocols, and yield farming mechanisms.
+2. Economic Model & Tokenomics — Research how DeFi creates and distributes value: governance tokens, protocol fees, TVL dynamics, and incentive alignment.
+3. Risks & Regulatory Landscape — Research what threatens DeFi: smart contract exploits, systemic risks, rug pulls, and how regulators globally are responding.

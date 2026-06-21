@@ -1,12 +1,12 @@
 > Routed by: ORCHESTRATOR.md
-> Topic: Arbitrage on DEXs
+> Topic: decentralized finance
 
-## Research plan: Arbitrage on DEXs
+## Research plan: decentralized finance
 
 ### Reasoning
-DEX arbitrage spans three independent layers: the mathematical mechanics that create price gaps, the concrete strategies traders use to capture them, and the economic reality of competition and risk. Together these cover the full picture — from why arbitrage exists to whether it's still profitable in 2026.
+DeFi is a multi-layered ecosystem. To understand it fully, we need to cover its technical infrastructure (what it runs on), its economic and financial mechanisms (how value flows and is created), and its real-world adoption and regulatory context (how it interacts with traditional systems). These three angles are orthogonal — one could study the code without the economics, or the regulation without the code — yet together they form a complete picture.
 
 ### Angles
-1. AMM Mechanics & Price Formation — How constant-function market makers create arbitrage opportunities, concentrated liquidity math, and how price discovery lags between pools
-2. Arbitrage Strategies & Execution Infrastructure — DEX-DEX, CEX-DEX, and cross-chain arbitrage strategies, flash loan mechanics, transaction bundling, and priority gas auctions
-3. Risk, Competition & Profitability Economics — MEV searcher competition, sandwich attacks on arb transactions, gas cost modeling, reversion risk, and the evolution of arbitrage profit margins through 2026
+1. **Protocol Infrastructure** — The technical backbone of DeFi: blockchain layers (Ethereum, L2s, Solana), smart contract platforms, major protocol categories (DEXes like Uniswap, lending protocols like Aave, bridges, oracles), and how they interoperate.
+2. **Economic Mechanisms** — The financial primitives and incentive design: Automated Market Makers (AMMs), yield farming, liquidity provision, stablecoin designs (collateralized vs. algorithmic), composability ("money legos"), and the major risk/exploit patterns (flash loan attacks, oracle manipulation, governance attacks).
+3. **Adoption & Regulation** — The real-world interface: institutional DeFi adoption, retail usage trends, regulatory approaches across key jurisdictions (US, EU, Asia), KYC/AML integration, and the convergence of TradFi and DeFi.

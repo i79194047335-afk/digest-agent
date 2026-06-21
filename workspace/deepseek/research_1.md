@@ -1,9 +1,9 @@
-Produced by: researcher.md (angle: AMM Mechanics & Price Formation, called by deep_digest.md)
-Topic: Arbitrage on DEXs
+> Produced by: researcher.md (angle: Protocol Infrastructure, called by deep_digest.md)
+> Topic: decentralized finance
 
-## AMM Mechanics & Price Formation: Arbitrage on DEXs
-- CFMMs like Uniswap enforce a constant product invariant, diverging from external market prices.
-- Concentrated liquidity concentrates capital near a current price, amplifying divergence when price moves outside the range.
-- Price impact on DEX pools creates a non-linear slippage curve that arbitrageurs exploit.
-- Arbitrageurs rebalance pools by trading until the AMM price matches the external market price.
-- Larger liquidity depth reduces divergence loss but increases the capital required for profitable arbitrage.
+## Protocol Infrastructure: decentralized finance
+- Ethereum dominates DeFi as the primary smart contract platform by TVL.
+- Layer-2s like Arbitrum and Optimism scale Ethereum via off-chain transaction batching.
+- DEXes like Uniswap use automated market makers for permissionless token swapping.
+- Lending protocols like Aave enable overcollateralized borrowing through pooled liquidity.
+- Chainlink oracles supply tamper-resistant price feeds essential for protocol solvency.

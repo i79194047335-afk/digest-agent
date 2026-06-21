@@ -1,9 +1,9 @@
-> Produced by: researcher.md (angle: Risk, Competition & Profitability Economics, called by deep_digest.md)
-> Topic: Arbitrage on DEXs
+> Produced by: researcher.md (angle: Adoption & Regulation, called by deep_digest.md)
+> Topic: decentralized finance
 
-## Risk, Competition & Profitability Economics: Arbitrage on DEXs
-- MEV searchers bid priority gas fees, eroding arbitrage profits toward zero.
-- Sandwich attacks front-run and back-run arb txs, extracting value from the searcher.
-- Failed transactions still cost gas, making revert risk a direct profitability drain.
-- Cross-domain MEV has intensified competition as solvers compete across L2s and L1.
-- Arbitrage profit margins have collapsed in 2026 due to algorithmic efficiency and saturation.
+## Adoption & Regulation: decentralized finance
+- Institutional DeFi adoption rises via tokenized real-world assets and regulated custody.
+- EU's MiCA regulation creates a licensing regime for DeFi protocols and stablecoins.
+- US SEC and CFTC pursue enforcement actions against unregistered DeFi platforms.
+- Singapore and Hong Kong issue targeted licenses for DeFi and digital asset firms.
+- Traditional banks experiment with DeFi protocols for lending and cross-border payments.

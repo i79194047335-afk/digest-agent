@@ -1,9 +1,9 @@
-Produced by: researcher.md (angle: Arbitrage Strategies & Execution Infrastructure, called by deep_digest.md)
-Topic: Arbitrage on DEXs
+> Produced by: researcher.md (angle: Economic Mechanisms, called by deep_digest.md)
+> Topic: decentralized finance
 
-## Arbitrage Strategies & Execution Infrastructure: Arbitrage on DEXs
-- DEX-DEX arbitrage exploits price discrepancies for the same asset across decentralized exchanges.
-- CEX-DEX arbitrage profits from price gaps between centralized and decentralized exchanges via atomic execution.
-- Cross-chain arbitrage uses bridges or atomic swaps to exploit price differences across distinct blockchain networks.
-- Flash loans enable uncollateralized arbitrage by borrowing and repaying within a single atomic transaction.
-- Priority gas auctions let searchers bid for transaction ordering to capture profitable arbitrage opportunities first.
+## Economic Mechanisms: decentralized finance
+- AMMs replace order books with constant product formulas like x*y=k for trading.
+- Yield farming incentivizes liquidity provision via governance token rewards, creating bootstrapping loops.
+- Overcollateralized stablecoins maintain peg through arbitrage; algorithmic ones risk death spirals.
+- Composability lets DeFi protocols stack like building blocks for complex strategies.
+- Flash loan attacks exploit atomic borrow-repay cycles combined with oracle manipulation for profit.

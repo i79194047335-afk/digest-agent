@@ -1,9 +1,9 @@
-> Produced by: researcher.md (angle: Risk, Competition & Profitability Economics, called by deep_digest.md)
-> Topic: Arbitrage on DEXs
+> Produced by: researcher.md (angle: Risks & Regulatory Landscape, called by deep_digest.md)
+> Topic: decentralized finance
 
-## Risk, Competition & Profitability Economics: Arbitrage on DEXs
-- MEV searcher competition has compressed pure arbitrage margins to near zero on heavily traded pairs on Ethereum mainnet.
-- Sandwich attacks — inserting buys before and sells after a victim trade — can themselves be frontrun by competing searchers.
-- Failed transaction gas costs are a significant drag: on-chain arb bots may revert 40–80% of attempts in competitive markets.
-- Reversion risk spikes when two searchers target the same opportunity; only one wins, and the loser pays gas for nothing.
-- Profitability has shifted toward long-tail pairs, new pools at launch, and cross-chain routes where competition is thinner in 2026.
+## Risks & Regulatory Landscape: decentralized finance
+- Smart contract bugs have caused billions in losses through exploits, flash loan attacks, and logic vulnerabilities in DeFi protocols.
+- Rug pulls occur when anonymous developers drain liquidity from a protocol after attracting user deposits, a pervasive scam vector.
+- Systemic risk arises from composability: one protocol's failure can cascade across interconnected DeFi platforms in a contagion effect.
+- The U.S. SEC and CFTC have pursued enforcement actions against DeFi protocols, treating many tokens as unregistered securities.
+- The EU's MiCA regulation introduced a framework covering crypto assets but largely excludes fully decentralized protocols from its scope.
